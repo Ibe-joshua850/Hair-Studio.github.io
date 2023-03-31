@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Barber Shop Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <meta name="viewport" content="width =device-width, initial-scale =1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="banner">
+         <img src="logo.png" class="logo">  
+         <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+         </div> 
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#feature">FEATURES</a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                     <li><a href="josh.html">PRICES</a></li>
+                    <li><a href="#testimonial">TESTIMONIALS</a></li>
+                    <li><a href="#footer">MEET US</a></li>
+                    <li><a href="my.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="menu.png" id="menu">
+        </div>
+
+            <!--footer-->
+
+            <section id="footer">
+                <img src="footer-img.png" class="footer-img">
+                <div class="tittle-text">
+                    <p>CONTACT</p>
+                    <h1>Visit Shop Today</h1>
+                </div>
+                <div class="footer-row">
+                 <div class="footer-left">
+                    <h1>Opening Hours</h1>
+                    <p><i class="fa-solid fa-clock"></i>Monday to Friday - 9am to 9pm</p>
+                    <p><i class="fa-solid fa-clock"></i></i>Saturday and Sunday - 8am to 11pm</p>
+                 </div>
+                 <div class="footer-right">
+                    <h1>Get In Touch</h1>
+                    <p>22 Prince Adegoroye Str, Lagos City<i class="fa-solid fa-location-dot"></i></p>
+                    <p>ibeifeoma6@gmail.com<i class="fa-solid fa-paper-plane"></i></p>
+                    <p>+234 08034093303<i class="fa-solid fa-phone"></i></p>                   
+                 </div>  
+                </div>
+
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>Copyright My New Website Creation</p>
+                </div>
+            </section>
+
+
+
+
+            <script>
+                var menuBtn = document.getElementById("menuBtn")
+                var sideNav = document.getElementById("sideNav")
+                var menu = document.getElementById("menu")
+
+                sideNav.style.right ="-250px"
+
+                menuBtn.onclick = function(){
+                    if(sideNav.style.right == "-250px"){
+                        sideNav.style.right = "0";
+                        menu.src = "close.png";
+                    }
+                    else{
+                        sideNav.style.right = "-250px"
+                        menu.src = "menu.png";
+                    }
+                }
+                
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+            </script>
+
+    </body>
+</html>
